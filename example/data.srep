@@ -1,0 +1,15 @@
+[data]
+output result.txt
+input data_in.txt
+template template.txt
+
+[line]
+data = line.split("|")
+
+[process]
+
+$1
+value = "%s%i" %(value.strip(), line_number)
+
+$2
+value = "%s%i" %(value.replace(" ", ""), line_number)

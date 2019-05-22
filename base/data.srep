@@ -1,0 +1,9 @@
+[data]
+output result.txt
+input input.txt
+template template.txt
+
+[line]
+data = line.split(" ")
+
+[process]
