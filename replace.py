@@ -4,8 +4,7 @@ def execute_codes(__code_line__, value, line_number):
 	exec __code_line__
 	return value
 
-def execute_lines(__code_line__, line, line_number):
-	data = []
+def execute_lines(__code_line__, line, line_number, data):
 	exec __code_line__
 	return data
 
@@ -63,7 +62,7 @@ def main():
 		data = []
 		
 		for le in line_code:
-			data = execute_lines(le, line, n)
+			data = execute_lines(le, line, n, data)
 		
 		i = 1
 		for p in data:
