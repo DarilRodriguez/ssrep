@@ -12,4 +12,4 @@ $1
 value = "%s%i" %(value.strip(), line_number)
 
 $2
-value = "%s%i" %(value.replace(" ", ""), line_number)
+value = "%s%i" %(value.replace(" ", ""), line_number * 2)

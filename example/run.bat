@@ -1,1 +1,1 @@
-"../replace.py" data.srep
+python "../replace.py" data.srep
